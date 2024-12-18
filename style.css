@@ -83,7 +83,7 @@ body {
 /* Static Title Styling */
 
 #thankyoutext {
-    margin: 25px;
+    margin-top: 5px;
     width: 60%;
     font-family: 'Shift', sans-serif;
     position: relative;
