@@ -1,0 +1,124 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fullscreen Matrix Background */
+#matrixCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Send the canvas behind content */
+}
+
+/* Body Styling */
+body {
+    background-color: black;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    font-size: 1.2rem;
+}
+
+/* Container for Content */
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.messagescontainer{
+    font-size: 1.0rem;
+
+}
+
+
+
+/* Message Box Styling */
+#console {
+    width: 75%;
+    height: 250px;
+    background-color: black;
+    color: #76db76;
+    border: 2px solid #00ff00;
+    padding: 10px;
+    font-size: 1.2rem;
+    white-space: pre-wrap;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#console {
+    max-height: 250px; /* Set a maximum height for the message box */
+    overflow-y: auto;  /* Add vertical scrolling for overflow */
+    padding: 10px;
+    border: 2px solid #00ff00; /* Keep the styling consistent */
+    background-color: black;
+    color: #84dd84;
+    font-family: sans-serif;
+    white-space: pre-wrap; /* Allow wrapping for long lines */
+    word-wrap: break-word; /* Break words if they are too long */
+    line-height: 1.5; /* Improve readability for multiline messages */
+}
+
+
+
+
+#nextButton:hover {
+    background-color: #64bc83;
+    color: black;
+}
+#prevButton:hover {
+    background-color: #64bc83;
+    color: black;
+}
+
+/* Static Title Styling */
+
+#thankyoutext {
+    font-family: 'Shift', sans-serif;
+    position: relative;
+    color: #ff0000;
+    padding: 23px;
+    border: 2px solid #ff0000;
+    font-size: 1.5rem;          
+    background-color: black;
+    top: -100px;
+    left: -60px; 
+    margin-bottom: 10px;
+
+    z-index: 2;                 
+
+}
+
+
+#button-container {
+    display: flex;            /* Align the buttons horizontally */
+    justify-content: flex-end; /* Align buttons to the right */
+    gap: 10px;                /* Space between the buttons */
+    margin-top: 20px;         /* Add space above buttons */
+    margin-right: -62%;
+}
+
+#prevButton, #nextButton {
+    background-color: lime;    /* Keep the green color */
+    color: black;              /* Button text color */
+    border: none;              /* Remove border */
+    padding: 10px 20px;        /* Add padding */
+    cursor: pointer;          /* Change cursor on hover */
+    font-weight: bold;         /* Make the text bold */
+    font-size: 16px;           /* Adjust font size */
+}
+
+#prevButton:hover, #nextButton:hover {
+    background-color: darkgreen; /* Slightly darker green on hover */
+    color: white;
+}
+
