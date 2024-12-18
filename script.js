@@ -15,7 +15,7 @@ const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-const matrixChars = "abcdefghijklmnopqrstuvwxyz0123456789@#$%^&*()";
+const matrixChars = "Professor Wail Ukaily";
 const fontSize = 16;
 const columns = Math.floor(canvas.width / fontSize);
 const drops = Array(columns).fill(0);
